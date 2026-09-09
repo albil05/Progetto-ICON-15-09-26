@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:pharma="http://www.semanticweb.org/uniba/icon/pharma#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#MonoComponent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/uniba/icon/pharma#DrugFormulation"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/uniba/icon/pharma#MultiComponent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#CardiovascularArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/uniba/icon/pharma#TherapeuticArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#Area_Oncology">
+    <rdf:type rdf:resource="http://www.semanticweb.org/uniba/icon/pharma#TherapeuticArea"/>
+    <pharma:hasRiskProfile rdf:resource="http://www.semanticweb.org/uniba/icon/pharma#HighRisk"/>
+    <pharma:recommendedSafetyCheck rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intensive_Clinical_Vigilance</pharma:recommendedSafetyCheck>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#LowRisk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#Area_Neuro_Psychiatry">
+    <rdf:type rdf:resource="http://www.semanticweb.org/uniba/icon/pharma#TherapeuticArea"/>
+    <pharma:hasRiskProfile rdf:resource="http://www.semanticweb.org/uniba/icon/pharma#HighRisk"/>
+    <pharma:recommendedSafetyCheck rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neurological_SideEffects_Monitoring</pharma:recommendedSafetyCheck>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#NeuroPsychiatryArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/uniba/icon/pharma#TherapeuticArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#Area_General_Medicine">
+    <rdf:type rdf:resource="http://www.semanticweb.org/uniba/icon/pharma#TherapeuticArea"/>
+    <pharma:hasRiskProfile rdf:resource="http://www.semanticweb.org/uniba/icon/pharma#LowRisk"/>
+    <pharma:recommendedSafetyCheck rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Standard_Vigilance</pharma:recommendedSafetyCheck>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#TherapeuticArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#OncologyArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/uniba/icon/pharma#TherapeuticArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#ModerateRisk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#GeneralArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#MultiComponent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/uniba/icon/pharma#DrugFormulation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#Area_Cardiovascular">
+    <rdf:type rdf:resource="http://www.semanticweb.org/uniba/icon/pharma#TherapeuticArea"/>
+    <pharma:hasRiskProfile rdf:resource="http://www.semanticweb.org/uniba/icon/pharma#ModerateRisk"/>
+    <pharma:recommendedSafetyCheck rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood_Pressure_Monitoring</pharma:recommendedSafetyCheck>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#recommendedSafetyCheck">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#HighRisk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#hasRiskProfile">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#ClinicalRiskProfile">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/uniba/icon/pharma#DrugFormulation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
